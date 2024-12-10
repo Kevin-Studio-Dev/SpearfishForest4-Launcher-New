@@ -33,11 +33,12 @@ exports.queryEJS = function(id, placeHolders){
 }
 
 exports.setupLanguage = function(){
-    // Load Language Files
+    // 기본 영어 파일 로드 (fallback용)
     exports.loadLanguage('en_US')
-    // Uncomment this when translations are ready
-    //exports.loadLanguage('xx_XX')
+    
+    // 한국어 파일 로드
+    exports.loadLanguage('ko_KR')
 
-    // Load Custom Language File for Launcher Customizer
+    // 커스텀 언어 파일 로드
     exports.loadLanguage('_custom')
 }

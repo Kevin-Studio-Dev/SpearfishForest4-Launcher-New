@@ -3235,7 +3235,7 @@ input:checked + .toggleSwitchSlider:before {
     position: absolute;
     visibility: hidden;
     opacity: 0;
-    width: 145px;
+    width: 200px;  /* 너비 증가 */
     min-height: 150px;
     background-color: rgba(0, 0, 0, 0.75);
     color: #fff;
@@ -3280,6 +3280,7 @@ input:checked + .toggleSwitchSlider:before {
     display: flex;
     align-items: center;
     margin: 10px 0px;
+    white-space: nowrap;  /* 줄바꿈 방지 */
 }
 
 /* White bar which surrounds the non essential service title. */
@@ -3295,6 +3296,7 @@ input:checked + .toggleSwitchSlider:before {
     padding: 0px 3px;
     text-align: center;
     letter-spacing: 1px;
+    white-space: nowrap;  /* 줄바꿈 방지 */
 }
 
 /* Wrapper container for mojang service information. */

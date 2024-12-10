@@ -6,8 +6,8 @@ settingsTooltip = "설정"
 serverStatus = "서버 상태"
 serverStatusPlaceholder = "오프라인"
 mojangStatus = "모장 상태"
-mojangStatusTooltipTitle = "서비스"
-mojangStatusNETitle = "비필수"
+mojangStatusTooltipTitle = "서비스 상태"
+mojangStatusNETitle = "비필수 서비스"
 newsButton = "뉴스"
 launchButton = "플레이"
 launchButtonPlaceholder = "&#8226; 서버 선택 안 됨"
@@ -36,8 +36,8 @@ loginPasswordDisclaimer2 = "{appName}은(는) 모장 AB와 제휴되어 있지 �
 
 [ejs.loginOptions]
 loginOptionsTitle = "로그인 옵션"
-loginWithMicrosoft = "마이크로소프트 계정으로 로그인"
-loginWithMojang = "모장 계정으로 로그인"
+loginWithMicrosoft = "Microsoft 계정으로 로그인"
+loginWithMojang = "Mojang 계정으로 로그인"
 cancelButton = "취소"
 
 [ejs.overlay]
@@ -342,3 +342,14 @@ gameNotPurchasedTitle = "로그인 오류:<br>게임 미구매"
 gameNotPurchasedDesc = "로그인하려는 계정이 Minecraft를 구매하지 않았습니다. <a href=\"https://minecraft.net/\">Minecraft.net</a>에서 구매할 수 있습니다."
 unknownErrorTitle = "로그인 중 알 수 없는 오류"
 unknownErrorDesc = "알 수 없는 오류가 발생했습니다. 자세한 내용은 콘솔을 참조하세요."
+
+# 서비스 이름들도 한글로 번역
+"Multiplayer Session Service" = "멀티플레이어 세션 서비스"
+"Microsoft OAuth Server" = "Microsoft 인증 서버"
+"Xbox Live Auth Server" = "Xbox Live 인증 서버"
+"Xbox Live Gatekeeper" = "Xbox Live 게이트키퍼"
+"Minecraft API for Microsoft Accounts" = "Microsoft 계정용 Minecraft API"
+"Minecraft Skins" = "Minecraft 스킨"
+"Public API" = "공개 API"
+"Mojang Accounts Website" = "Mojang 계정 웹사이트"
+"Minecraft Profile for Microsoft Accounts" = "Microsoft 계정용 Minecraft 프로필"

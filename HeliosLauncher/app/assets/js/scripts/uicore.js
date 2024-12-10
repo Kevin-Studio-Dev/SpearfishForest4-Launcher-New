@@ -11,6 +11,7 @@ const remote                         = require('@electron/remote')
 const isDev                          = require('./assets/js/isdev')
 const { LoggerUtil }                 = require('helios-core')
 const Lang                           = require('./assets/js/langloader')
+const { app, BrowserWindow, ipcMain, Menu } = require('@electron/remote')
 
 const loggerUICore             = LoggerUtil.getLogger('UICore')
 const loggerAutoUpdater        = LoggerUtil.getLogger('AutoUpdater')
@@ -212,3 +213,41 @@ document.addEventListener('keydown', function (e) {
         window.toggleDevTools()
     }
 })
+
+// 메뉴 템플릿 추가
+const template = [
+    {
+        label: 'View',
+        submenu: [
+            {
+                label: 'Toggle Developer Tools',
+                accelerator: process.platform === 'darwin' ? 'Alt+Command+I' : 'Ctrl+Shift+I',
+                click(item, focusedWindow) {
+                    if (focusedWindow) focusedWindow.webContents.toggleDevTools()
+                }
+            }
+        ]
+    }
+]
+
+// macOS의 경우 앱 메뉴 추가
+if (process.platform === 'darwin') {
+    template.unshift({
+        label: app.getName(),
+        submenu: [
+            { role: 'about' },
+            { type: 'separator' },
+            { role: 'services' },
+            { type: 'separator' },
+            { role: 'hide' },
+            { role: 'hideothers' },
+            { role: 'unhide' },
+            { type: 'separator' },
+            { role: 'quit' }
+        ]
+    })
+}
+
+// 메뉴 적용
+const menu = Menu.buildFromTemplate(template)
+Menu.setApplicationMenu(menu)
