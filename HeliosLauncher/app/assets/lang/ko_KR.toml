@@ -17,6 +17,8 @@ newsErrorLoadSpan = "뉴스 확인 중.."
 newsErrorFailedSpan = "뉴스 로드 실패"
 newsErrorRetryButton = "다시 시도"
 newsErrorNoneSpan = "새로운 뉴스 없음"
+mediaGitHubURL = "https://github.com/{your-username}"
+mediaDiscordURL = "https://discord.gg/{your-discord-invite}"
 
 [ejs.login]
 loginCancelText = "취소"
@@ -271,10 +273,10 @@ stableReleaseTitle = "안정 버전"
 releaseNotesFailed = "릴리스 노트를 불러오지 못했습니다."
 
 [js.settings.updates]
-newReleaseTitle = "새로운 릴리스 사용 가능"
-newPreReleaseTitle = "새 사전 출시 버전 사용 가능"
+newReleaseTitle = "새로운 업데이트가 있습니다"
+newPreReleaseTitle = "새로운 프리릴리즈가 있습니다"
 downloadingButton = "다운로드 중.."
-downloadButton = 'GitHub에서 다운로드<span style="font-size: 10px;color: gray;text-shadow: none !important;">런처를 닫고 dmg를 실행하여 업데이트하세요.</span>'
+downloadButton = 'GitHub에서 다운로드<span style="font-size: 10px;color: gray;text-shadow: none !important;">런처를 종료하고 설치 파일을 실행하세요.</span>'
 latestVersionTitle = "최신 버전을 사용 중입니다"
 checkForUpdatesButton = "업데이트 확인"
 checkingForUpdatesButton = "업데이트 확인 중.."

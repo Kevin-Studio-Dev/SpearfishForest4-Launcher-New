@@ -2,6 +2,12 @@ appId: 'spearforestlauncher'
 productName: 'Spearforest Launcher'
 artifactName: '${productName}-setup-${version}.${ext}'
 
+# GitHub 자동 업데이트를 위한 설정
+publish:
+  provider: 'github'
+  owner: 'Kevin-Studio-Dev'
+  repo: 'HeliosLauncher'
+
 copyright: 'Copyright © 2024 Sunghyun Kim'
 
 asar: true
