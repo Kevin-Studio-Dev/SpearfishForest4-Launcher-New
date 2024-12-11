@@ -1,5 +1,5 @@
 {
-  "$schema": "file:///Users/hellosunghyun/Documents/Github/SpearfishForest4-Launcher-New/publishing/schemas/ServerMetaSchema.schema.json",
+  "$schema": "file:///Users/hellosunghyun/Documents/Github/SpearfishForest4-Monorepo/Release/schemas/ServerMetaSchema.schema.json",
   "meta": {
     "version": "0.0.1",
     "name": "spearforest (Minecraft 1.20.1)",
